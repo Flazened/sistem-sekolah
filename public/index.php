@@ -10,8 +10,6 @@ $router->add(method: 'GET', uri: '/students', controller: 'StudentController', f
 $router->add(method: 'GET', uri: '/students/create', controller: 'StudentController', function: 'create');
 $router->add(method: 'GET', uri: '/students/{id}', controller: 'StudentController', function: 'show');
 
-echo "Router is running...";
-
 $router->run();
 
 ?>
