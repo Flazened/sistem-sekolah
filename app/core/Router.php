@@ -39,7 +39,7 @@
                 if(preg_match($pattern, $uri, $matches)) {
                 array_shift($matches); // Remove the full match
 
-                require_once './app/controllers/' . $route['controller'] . '.php';
+                require_once '../app/controllers/' . $route['controller'] . '.php';
 
                 $controllerName = 'App\Controllers\\' . $route['controller'];
                 $controller = new $controllerName();
